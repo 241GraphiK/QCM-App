@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 // Route POST : enregistrement d’un score
 app.post("/api/results", async (req, res) => {
   try {
+    console.log("📩 Requête reçue :", req.body); // log pour debug
     const { username, answers, score } = req.body;
     const result = new Result({ username, answers, score });
     await result.save();

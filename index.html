@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCM Module 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="logo-header">
+  <img src="XDesign-logo.png" alt="XDesign Logo" class="logo-img">
+</header>
+  <h1>QCM - Composantes de l'UC</h1>
+  
+  <!-- Écran de démarrage -->
+  <div id="start-screen">
+    <label for="username">Entrez votre nom :</label>
+    <input type="text" id="username" name="username" required>
+    <button onclick="startQuiz()">Démarrer le QCM</button>
+  </div>
+  
+  <!-- Conteneur du QCM -->
+  <div id="quiz-container" class="hidden"></div>
+  
+  <!-- Bouton de soumission -->
+  <div id="submit-section" class="hidden">
+    <button onclick="submitQuiz()">Enregistrer et envoyer</button>
+  </div>
+  
+  <!-- Résultat -->
+  <div id="result"></div>
+  
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>

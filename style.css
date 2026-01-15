@@ -1,0 +1,121 @@
+/* Style global */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #111; /* noir profond */
+  color: #fff; /* texte blanc */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Titre principal */
+h1 {
+  color: #e50914; /* rouge vif */
+  font-size: 2.5rem;
+  margin: 40px 0 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Écran de démarrage */
+#start-screen {
+  background: #222;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #e50914;
+  border-radius: 5px;
+  width: 250px;
+  margin-bottom: 20px;
+  background: #111;
+  color: #fff;
+}
+
+/* Boutons */
+button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #e50914;
+  border: 2px solid #e50914;
+}
+
+/* Conteneur du quiz */
+#quiz-container {
+  margin-top: 30px;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+#quiz-container p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+label input {
+  margin-right: 10px;
+}
+
+/* Section soumission */
+#submit-section {
+  margin-top: 20px;
+}
+
+/* Résultat */
+#result {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914;
+  text-align: center;
+}
+
+/* Classe utilitaire */
+.hidden {
+  display: none;
+}
+
+/* Bandeau du logo */
+.logo-header {
+  width: 100%;
+  background-color: #111; /* noir profond */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(229, 9, 20, 0.6);
+}
+
+/* Image du logo */
+.logo-img {
+  max-width: 200px;
+  height: auto;
+}

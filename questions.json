@@ -1,0 +1,192 @@
+[
+  {
+    "question": "Quel est le rôle principal du boîtier de l'unité centrale ?",
+    "options": ["Produire du son", "Stocker les données", "Protéger les composants", "Exécuter les instructions"],
+    "answer": 2
+  },
+  {
+    "question": "La carte mère sert principalement à :",
+    "options": ["Afficher les images", "Interconnecter les composants", "Produire du son", "Stocker les données"],
+    "answer": 1
+  },
+  {
+    "question": "Le processeur est considéré comme :",
+    "options": ["La mémoire de l'ordinateur", "Le disque dur", "Le cerveau de l'ordinateur", "Le cœur de l'ordinateur"],
+    "answer": 2
+  },
+  {
+    "question": "Un processeur cadencé à 3 GHz effectue :",
+    "options": ["3000 instructions par seconde", "3 millions d'instructions par seconde", "30 milliards d'instructions par seconde", "3 milliards d'instructions par seconde"],
+    "answer": 3
+  },
+  {
+    "question": "Quels sont les deux principaux fabricants de processeurs pour PC ?",
+    "options": ["AMD et Qualcomm", "NVIDIA et ARM", "Intel et NVIDIA", "Intel et AMD"],
+    "answer": 3
+  },
+  {
+    "question": "Le chipset contrôle :",
+    "options": ["Les échanges entre composants", "L'affichage graphique", "La connexion réseau", "La production sonore"],
+    "answer": 0
+  },
+  {
+    "question": "Le BIOS est :",
+    "options": ["Une mémoire vive", "Un disque dur", "Un programme permanent", "Un ventilateur"],
+    "answer": 2
+  },
+  {
+    "question": "Le CMOS conserve :",
+    "options": ["Les informations fondamentales même éteint", "Les sons produits", "Les images affichées", "Les données temporaires"],
+    "answer": 0
+  },
+  {
+    "question": "Le ventilateur sert à :",
+    "options": ["Produire du son", "Amener de l'air frais", "Stocker des données", "Exécuter des instructions"],
+    "answer": 1
+  },
+  {
+    "question": "La mémoire vive (RAM) est :",
+    "options": ["Volatile", "Utilisée uniquement par le BIOS", "Gravée en usine", "Permanente"],
+    "answer": 0
+  },
+  {
+    "question": "La mémoire morte (ROM) est :",
+    "options": ["Utilisée pour les programmes temporaires", "Toujours modifiable", "À lecture seule", "Volatile"],
+    "answer": 2
+  },
+  {
+    "question": "La mémoire cache sert à :",
+    "options": ["Stocker des données permanentes", "Produire du son", "Optimiser la performance du processeur", "Afficher des images"],
+    "answer": 2
+  },
+  {
+    "question": "Le disque dur est :",
+    "options": ["Un ventilateur", "Un support de stockage permanent", "Une mémoire volatile", "Un processeur"],
+    "answer": 1
+  },
+  {
+    "question": "La carte graphique sert à :",
+    "options": ["Produire du son", "Afficher les informations", "Stocker des données", "Contrôler les échanges internes"],
+    "answer": 1
+  },
+  {
+    "question": "La carte son permet :",
+    "options": ["De produire du son", "De refroidir le processeur", "De stocker des données", "D'afficher des images"],
+    "answer": 0
+  },
+  {
+    "question": "La carte réseau sert à :",
+    "options": ["Produire du son", "Connecter l'ordinateur à un réseau", "Afficher des images", "Stocker des données"],
+    "answer": 1
+  },
+  {
+    "question": "Les bus de données servent à :",
+    "options": ["Transférer des données", "Stocker des programmes", "Produire du son", "Afficher des images"],
+    "answer": 0
+  },
+  {
+    "question": "Les bus d'adresses servent à :",
+    "options": ["Produire du son", "Afficher des images", "Transférer des données", "Véhiculer les adresses"],
+    "answer": 3
+  },
+  {
+    "question": "Le bloc d'alimentation convertit :",
+    "options": ["Les images en sons", "Les données en sons", "La tension secteur en tensions continues", "Les instructions en données"],
+    "answer": 2
+  },
+  {
+    "question": "Si le BIOS est corrompu, que se passe-t-il au démarrage ?",
+    "options": ["L'ordinateur démarre normalement", "Le système d'exploitation ne peut pas se lancer", "La carte graphique cesse de fonctionner", "La mémoire vive se réinitialise"],
+    "answer": 1
+  },
+    {
+    "question": "Pourquoi la fréquence d'horloge seule ne suffit pas à mesurer la puissance d'un processeur ?",
+    "options": ["Parce que la RAM est plus importante", "Parce que le nombre de cœurs et l'architecture influencent aussi les performances", "Parce que le disque dur détermine la vitesse", "Parce que le BIOS limite la fréquence"],
+    "answer": 1
+  },
+  {
+    "question": "Quel est l'impact d'une défaillance du ventilateur sur le processeur ?",
+    "options": ["Le processeur s'arrête immédiatement", "Le processeur surchauffe et peut s'endommager", "Le BIOS cesse de fonctionner", "La mémoire vive se vide"],
+    "answer": 1
+  },
+  {
+    "question": "Pourquoi les bus de commande sont essentiels ?",
+    "options": ["Ils produisent du son", "Ils synchronisent les échanges entre composants", "Ils stockent des données permanentes", "Ils remplacent le chipset"],
+    "answer": 1
+  },
+  {
+    "question": "Quelle est la conséquence d'une panne du bloc d'alimentation ?",
+    "options": ["L'ordinateur démarre sans affichage", "L'ordinateur ne démarre pas du tout", "La mémoire vive devient permanente", "Le BIOS se réinitialise"],
+    "answer": 1
+  },
+  {
+    "question": "Pourquoi la mémoire cache est plus rapide que la RAM ?",
+    "options": ["Parce qu'elle est intégrée directement au processeur", "Parce qu'elle est plus grande", "Parce qu'elle est alimentée par le BIOS", "Parce qu'elle utilise le disque dur"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est le rôle du chipset vis-à-vis du processeur ?",
+    "options": ["Il exécute les instructions", "Il organise les échanges entre processeur et autres composants", "Il remplace la mémoire vive", "Il produit du son"],
+    "answer": 1
+  },
+  {
+    "question": "Quelle est la différence entre mémoire vive et disque dur ?",
+    "options": ["La RAM est volatile, le disque dur est permanent", "La RAM est plus lente que le disque dur", "Le disque dur est intégré au processeur", "La RAM conserve les données même éteint"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est l'impact d'un BIOS mal configuré ?",
+    "options": ["Le système d'exploitation peut ne pas reconnaître certains composants", "Le disque dur devient inutilisable", "La carte graphique cesse de fonctionner", "La mémoire vive devient permanente"],
+    "answer": 0
+  },
+  {
+    "question": "Pourquoi les multiples binaires (KiO, MiO, GiO) sont utilisés en informatique ?",
+    "options": ["Parce que les ordinateurs fonctionnent en base 2", "Parce qu'ils sont plus simples à comprendre", "Parce qu'ils remplacent les multiples décimaux", "Parce qu'ils sont utilisés uniquement par les disques durs"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est le rôle des cavaliers sur la carte mère ?",
+    "options": ["Configurer certains paramètres matériels", "Produire du son", "Stocker des données permanentes", "Refroidir le processeur"],
+    "answer": 0
+  },
+  {
+    "question": "Pourquoi la carte graphique est indispensable même pour un affichage basique ?",
+    "options": ["Parce qu'elle gère le rendu visuel", "Parce qu'elle stocke les données", "Parce qu'elle produit du son", "Parce qu'elle remplace le BIOS"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est l'impact d'une panne de la pile CMOS ?",
+    "options": ["Perte des réglages de base (date, heure, configuration)", "Perte des données du disque dur", "Arrêt du processeur", "Blocage de la carte graphique"],
+    "answer": 0
+  },
+  {
+    "question": "Pourquoi la RAM est appelée mémoire de travail ?",
+    "options": ["Parce qu'elle stocke les données en cours d'utilisation", "Parce qu'elle conserve les données permanentes", "Parce qu'elle initialise le BIOS", "Parce qu'elle refroidit le processeur"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est le rôle des connecteurs PCI sur la carte mère ?",
+    "options": ["Ajouter des cartes d'extension", "Produire du son", "Stocker des données permanentes", "Refroidir le processeur"],
+    "answer": 0
+  },
+  {
+    "question": "Pourquoi le disque dur est dit non volatile ?",
+    "options": ["Parce qu'il conserve les données même sans alimentation", "Parce qu'il est intégré au processeur", "Parce qu'il est plus rapide que la RAM", "Parce qu'il initialise le BIOS"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est le rôle des ports USB sur la carte mère ?",
+    "options": ["Connecter des périphériques externes", "Produire du son", "Stocker des données permanentes", "Refroidir le processeur"],
+    "answer": 0
+  },
+  {
+    "question": "Pourquoi le BIOS est appelé programme permanent ?",
+    "options": ["Parce qu'il est stocké dans la ROM et ne disparaît pas à l'arrêt", "Parce qu'il est plus rapide que la RAM", "Parce qu'il conserve les données du disque dur", "Parce qu'il refroidit le processeur"],
+    "answer": 0
+  },
+  {
+    "question": "Quel est l'impact d'une mauvaise configuration des bus d'adresses ?",
+    "options": ["Les composants ne peuvent pas accéder correctement à la mémoire", "Le disque dur devient inutilisable", "Le BIOS cesse de fonctionner", "La carte graphique ne produit plus d'image"],
+    "answer": 0
+  }
+]

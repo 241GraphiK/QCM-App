@@ -189,4 +189,14 @@
     "options": ["Les composants ne peuvent pas accéder correctement à la mémoire", "Le disque dur devient inutilisable", "Le BIOS cesse de fonctionner", "La carte graphique ne produit plus d'image"],
     "answer": 0
   }
+  {
+  "question": "Quel est le rôle du système d'exploitation dans un ordinateur ?",
+  "options": ["Gérer les périphériques et les ressources", "Produire du son", "Refroidir le processeur", "Stocker des données permanentes"],
+  "answer": 0
+},
+{
+  "question": "Pourquoi les mises à jour logicielles sont importantes ?",
+  "options": ["Elles améliorent la sécurité et corrigent des bugs", "Elles produisent du son", "Elles remplacent la mémoire vive", "Elles augmentent la taille du disque dur"],
+  "answer": 0
+}
 ]

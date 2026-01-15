@@ -188,7 +188,7 @@
     "question": "Quel est l'impact d'une mauvaise configuration des bus d'adresses ?",
     "options": ["Les composants ne peuvent pas accéder correctement à la mémoire", "Le disque dur devient inutilisable", "Le BIOS cesse de fonctionner", "La carte graphique ne produit plus d'image"],
     "answer": 0
-  }
+  },
   {
   "question": "Quel est le rôle du système d'exploitation dans un ordinateur ?",
   "options": ["Gérer les périphériques et les ressources", "Produire du son", "Refroidir le processeur", "Stocker des données permanentes"],

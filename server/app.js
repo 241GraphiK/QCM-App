@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../frontend")));
 
 // ✅ Connexion MongoDB avec gestion des erreurs
-mongoose.connect("mongodb://localhost:27017/qcm", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb://localhost:27017/qcm")
   .then(() => console.log("✅ Connecté à MongoDB"))
   .catch(err => console.error("❌ Erreur MongoDB:", err));
 

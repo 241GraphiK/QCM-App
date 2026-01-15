@@ -99,7 +99,7 @@
     "options": ["L'ordinateur démarre normalement", "Le système d'exploitation ne peut pas se lancer", "La carte graphique cesse de fonctionner", "La mémoire vive se réinitialise"],
     "answer": 1
   },
-    {
+  {
     "question": "Pourquoi la fréquence d'horloge seule ne suffit pas à mesurer la puissance d'un processeur ?",
     "options": ["Parce que la RAM est plus importante", "Parce que le nombre de cœurs et l'architecture influencent aussi les performances", "Parce que le disque dur détermine la vitesse", "Parce que le BIOS limite la fréquence"],
     "answer": 1

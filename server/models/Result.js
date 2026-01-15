@@ -1,10 +1,23 @@
 const mongoose = require("mongoose");
 
-const resultSchema = new mongoose.Schema({
-  username: String,
-  answers: [Number],
-  score: Number,
-  date: { type: Date, default: Date.now }
+const ResultSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  answers: {
+    type: [String],   // tableau de réponses
+    required: true
+  },
+  score: {
+    type: Number,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
 });
 
-module.exports = mongoose.model("Result", resultSchema);
+module.exports = mongoose.model("Result", ResultSchema);

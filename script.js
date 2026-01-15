@@ -2,6 +2,7 @@ let questions = [];
 let userAnswers = [];
 let username = "";
 
+// 🚀 Démarrage du quiz
 async function startQuiz() {
   username = document.getElementById("username").value;
   if (!username) {
@@ -24,6 +25,7 @@ async function startQuiz() {
   renderQuiz();
 }
 
+// 🎨 Affichage des questions
 function renderQuiz() {
   const container = document.getElementById("quiz-container");
   container.innerHTML = "";
@@ -42,6 +44,7 @@ function renderQuiz() {
   });
 }
 
+// ✅ Soumission du quiz
 async function submitQuiz() {
   let score = 0;
   userAnswers = [];
@@ -61,21 +64,25 @@ async function submitQuiz() {
   document.getElementById("result").innerText =
     `${username}, votre score est : ${score}/20`;
 
-  // ✅ Envoi vers backend Render (remplace l’URL par celle de ton service Render)
+  // 📤 Envoi vers backend Render
   try {
+    console.log("📤 Envoi :", { username, answers: userAnswers, score });
+
     const response = await fetch("https://qcm-app.onrender.com/api/results", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ username, answers: userAnswers, score })
-});
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, answers: userAnswers, score })
+    });
 
     if (!response.ok) {
       throw new Error("Erreur lors de l'enregistrement du score !");
     }
 
-    console.log("✅ Résultat sauvegardé !");
+    const data = await response.json();
+    console.log("✅ Réponse serveur :", data);
+    alert("Score enregistré avec succès !");
   } catch (err) {
-    console.error("❌", err);
+    console.error("❌ Erreur fetch :", err);
     alert("Impossible d'enregistrer le score sur le serveur !");
   }
 }

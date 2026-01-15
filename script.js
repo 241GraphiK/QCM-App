@@ -63,11 +63,11 @@ async function submitQuiz() {
 
   // ✅ Envoi vers backend Render (remplace l’URL par celle de ton service Render)
   try {
-    const response = await fetch("https://qcm-backend.onrender.com/api/results", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, answers: userAnswers, score })
-    });
+    const response = await fetch("https://qcm-app.onrender.com/api/results", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ username, answers: userAnswers, score })
+});
 
     if (!response.ok) {
       throw new Error("Erreur lors de l'enregistrement du score !");

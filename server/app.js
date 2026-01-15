@@ -3,22 +3,18 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 
-// Import du modèle
 const Result = require("./models/Result");
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Sert les fichiers statiques (frontend)
-app.use(express.static(path.join(__dirname, "../frontend")));
-
-// ✅ Connexion MongoDB avec gestion des erreurs
-mongoose.connect("mongodb://localhost:27017/qcm")
-  .then(() => console.log("✅ Connecté à MongoDB"))
+// Connexion MongoDB Atlas
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ Connecté à MongoDB Atlas"))
   .catch(err => console.error("❌ Erreur MongoDB:", err));
 
-// ✅ Route POST pour enregistrer les résultats
+// Route POST
 app.post("/api/results", async (req, res) => {
   try {
     const { username, answers, score } = req.body;
@@ -31,16 +27,16 @@ app.post("/api/results", async (req, res) => {
   }
 });
 
-// ✅ Route GET pour consulter tous les résultats
+// Route GET
 app.get("/api/results", async (req, res) => {
   try {
     const results = await Result.find();
     res.json(results);
   } catch (err) {
-    console.error("Erreur récupération:", err);
     res.status(500).json({ error: err.message });
   }
 });
 
-// ✅ Démarrage du serveur
-app.listen(3000, () => console.log("🚀 Serveur en écoute sur port 3000"));
+// Démarrage serveur
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Serveur en écoute sur port ${PORT}`));

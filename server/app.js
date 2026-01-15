@@ -8,9 +8,9 @@ const Result = require("./models/Result");
 const app = express();
 app.use(express.json());
 
-// Autoriser uniquement ton GitHub Pages
+// ✅ Autoriser uniquement ton GitHub Pages
 app.use(cors({
-  origin: "https://241graphik.github.io/QCM-App/"
+  origin: "https://241graphik.github.io"
 }));
 
 // Connexion MongoDB Atlas

@@ -44,23 +44,45 @@ function renderQuiz() {
   });
 }
 
-// ✅ Soumission du quiz
+// ✅ Soumission du quiz avec correction
 async function submitQuiz() {
   let score = 0;
   userAnswers = [];
 
+  const container = document.getElementById("quiz-container");
+
   questions.forEach((q, i) => {
     const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    let userAnswerIndex = null;
+
     if (selected) {
-      userAnswers.push(parseInt(selected.value));
-      if (parseInt(selected.value) === q.answer) {
+      userAnswerIndex = parseInt(selected.value);
+      userAnswers.push(userAnswerIndex);
+      if (userAnswerIndex === q.answer) {
         score += 0.5; // demi-point par bonne réponse
       }
     } else {
       userAnswers.push(null);
     }
+
+    // ✅ Correction affichée directement
+    const questionDiv = container.children[i];
+    const options = questionDiv.querySelectorAll("input");
+
+    options.forEach((opt, j) => {
+      if (j === q.answer) {
+        // bonne réponse en vert
+        opt.parentElement.style.color = "green";
+        opt.parentElement.style.fontWeight = "bold";
+      }
+      if (userAnswerIndex === j && userAnswerIndex !== q.answer) {
+        // mauvaise réponse en rouge
+        opt.parentElement.style.color = "red";
+      }
+    });
   });
 
+  // Affichage du score
   document.getElementById("result").innerText =
     `${username}, votre score est : ${score}/20`;
 

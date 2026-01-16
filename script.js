@@ -13,6 +13,10 @@ async function startQuiz() {
   try {
     const res = await fetch("questions.json");
     questions = await res.json();
+
+    // ✅ Injecter les nouvelles questions (9, 15 et 30)
+    injectMemoryQuestions();
+
   } catch (err) {
     alert("Impossible de charger questions.json !");
     return;

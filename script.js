@@ -25,6 +25,31 @@ async function startQuiz() {
   renderQuiz();
 }
 
+// Remplacement des questions 9, 15 et 30
+function injectMemoryQuestions() {
+  const replacements = {
+    8: {
+      question: "Combien de bits contient un octet ?",
+      options: ["4 bits", "8 bits", "16 bits", "1024 bits"],
+      answer: 1
+    },
+    14: {
+      question: "Quelle est la taille d’un kibi-octet (KiO) ?",
+      options: ["1000 octets", "1024 octets", "10⁶ octets", "2⁴ octets"],
+      answer: 1
+    },
+    29: {
+      question: "Combien d’octets contient un méga-octet (MO) selon les puissances de 10 ?",
+      options: ["1024 octets", "1 048 576 octets", "1 000 000 octets", "10⁹ octets"],
+      answer: 2
+    }
+  };
+
+  for (const index in replacements) {
+    questions[index] = replacements[index];
+  }
+}
+
 // 🎨 Affichage des questions
 function renderQuiz() {
   const container = document.getElementById("quiz-container");
